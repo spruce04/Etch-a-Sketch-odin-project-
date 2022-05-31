@@ -1,0 +1,11 @@
+.row, .cell {
+    border: 1px solid gray;
+    min-width: 10px;
+    min-height: 20px;
+    display: inline-block;     
+}
+
+.container {
+    width: 80vh;
+    height: 70vh;
+}
