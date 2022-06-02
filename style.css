@@ -1,10 +1,10 @@
-.row, .square {
+.square {
     border: 1px solid gray;     
 }
 
-.square {
-    width: 30px;
-    height: 30px;  
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 @media screen and (max-width: 575px){
@@ -12,13 +12,22 @@
         width: 15px;
         height: 15px;  
     }   
+    .size {
+        display: none;
+    }
 }
 
 .container {
     padding-top: 24px;
     display: flex;
-    justify-content: center;
     align-items: center;    
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 html, body {
@@ -48,4 +57,43 @@ html, body {
 .hImg {
     max-width: 100px;
     max-height: 100px;
+}
+
+.size {
+    padding-right: 48px;
+}
+
+.mode {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    flex-direction: column;
+}
+
+.modeList {
+    font-size: 20px;
+}
+
+.randomOne, .randomTwo, .randomThree, .randomFour, .randomFive, .randomSix {
+    display: inline;
+}
+.randomOne {
+    color: red;
+}
+.randomTwo {
+    color: blue;
+}
+.randomThree {
+    color: green;
+}
+.randomFour {
+    color: purple;
+}
+.randomFive {
+    color: orange;
+}
+.randomSix {
+    color: olive;
 }

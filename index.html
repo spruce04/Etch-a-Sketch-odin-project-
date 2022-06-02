@@ -11,9 +11,18 @@
 <body>
     <div class="header"><strong>Etch a Sketch!</strong>&nbsp;<img class="hImg" src="./Images/pencil.png" alt="pencil"></div>
     <div class="content">
-        <div id="container" class="container"></div>
-        <div class="mode">Choose Mode:</div>  
+        <div id="size" class="size">Change Grid Size: (1-100) <input type="number" id="gridSize"
+            min="1" max="100"><button id="changeGrid">Change</button></div>
+            <div id="container" class="container"></div>
     </div>
+        <div class="mode">Choose Mode:
+            <div class="modeList"><ul>
+                <li id="random"><div class="randomOne">R</div><div class="randomTwo">a</div><div class="randomThree">n</div><div class="randomFour">d</div><div class="randomFive">o</div><div class="randomSix">m</div></li>
+                <li>Choose Colours <input id="choice" type="color"><button id="select">select</button></li>
+                <li id="default">Reset Default</li>
+            </ul>  
+            </div>
+        </div>  
     <div class="footer">Made by &nbsp;<a href="https://github.com/spruce04/Etch-a-Sketch-odin-project-" target="_blank">spruce04</a>&nbsp; using HTML CSS and JS.</div>
 </body>
 </html>
