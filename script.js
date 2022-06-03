@@ -19,6 +19,8 @@ function makeGrid(gridNum) {
     for (let i = 0; i < gridNum; i++) {
         let row = document.createElement("div");   
         divContain.appendChild(row).className = "row";
+        row.style.width = `${dimensions}px`;
+        row.style.height = `${dimensions * gridNum}px`;
     };
     rows = document.getElementsByClassName("row");
     // Creates columns
@@ -26,8 +28,8 @@ function makeGrid(gridNum) {
         for (let j = 0; j < gridNum; j++) {
             let newCell = document.createElement("div");
             if (screen.width > 575) { //Formatting doesn't change for mobile devices.
-            newCell.style.width = `${dimensions}.px`
-            newCell.style.height = `${dimensions}.px`}
+            newCell.style.width = `${dimensions}px`
+            newCell.style.height = `${dimensions}px`};
             rows[j].appendChild(newCell).className = "square";
         };
     };
